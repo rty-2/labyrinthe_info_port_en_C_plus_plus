@@ -85,7 +85,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        gcc laby.cpp
+        gcc laby.cc
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
