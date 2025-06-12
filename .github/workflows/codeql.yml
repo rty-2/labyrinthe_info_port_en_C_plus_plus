@@ -85,7 +85,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-gcc -o laby_test laby.o
+        gcc -o laby_test laby.o
         exit 1
 
     - name: Perform CodeQL Analysis
